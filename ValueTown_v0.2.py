@@ -17,7 +17,8 @@ class card:
 
 class sifter:
     def __init__(self):
-        self.directory = "C:\Program Files (x86)\Hearthstone"
+        #self.directory = "C:\Program Files (x86)\Hearthstone" #My C Drive
+        self.directory = "A:\Hearthstone" #My A Drive
         try:
             self.zoneLog = open(self.directory + "\\Logs\\Zone.log",'w')
             self.powerLog = open(self.directory + "\\Logs\\Power.log",'w')
