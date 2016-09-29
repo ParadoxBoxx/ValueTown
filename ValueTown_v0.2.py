@@ -17,7 +17,7 @@ class card:
 
 class sifter:
 	def __init__(self):
-		self.directory = "C:\Program Files (x86)\Hearthstone"
+		self.directory = "A:\Hearthstone"
 		try:
 			self.zoneLog = open(self.directory + "\\Logs\\Zone.log",'w')
 			self.powerLog = open(self.directory + "\\Logs\\Power.log",'w')
@@ -211,41 +211,41 @@ def updateCard(cardID,name,atk,hp,zone,pos):
 def prettyData():
 	#print "--IN PRETTY DATA--"
 	os.system('cls' if os.name == 'nt' else 'clear')
-	deckFcards = countCards("deckF")
-	graveFcards = countCards("graveF")
-	handFcards = countCards("handF")
-	playFcards = countCards("playF")
-	deckOcards = countCards("deckO")
-	graveOcards = countCards("graveO")
-	handOcards = countCards("handO")
-	playOcards = countCards("playO")
-	print "Friendly Graveyard:"
-	for key, value in graveFcards.iteritems():
-		print "    " + key + " x" + str(value)
-	print "Friendly Deck:"
-	for key, value in deckFcards.iteritems():
-		print "    " + key + " x" + str(value)
-	print "Friendly Hand:"
-	for key, value in handFcards.iteritems():
-		print "    " + key + " x" + str(value)
-	print "Friendly Play:"
-	for key, value in playFcards.iteritems():
-		print "    " + key + " x" + str(value)
-	print "Opposing Play:"
-	for key, value in playOcards.iteritems():
-		print "    " + key + " x" + str(value)
-	print "Opposing Hand:"
-	for key, value in handOcards.iteritems():
-		print "    " + key + " x" + str(value)
-	print "Opposing Deck:"
-	for key, value in deckOcards.iteritems():
-		print "    " + key + " x" + str(value)
-	print "Opposing Graveyard:"
-	for key, value in graveOcards.iteritems():
-		print "    " + key + " x" + str(value)
-	print "========================================"
+	# deckFcards = countCards("deckF")
+	# graveFcards = countCards("graveF")
+	# handFcards = countCards("handF")
+	# playFcards = countCards("playF")
+	# deckOcards = countCards("deckO")
+	# graveOcards = countCards("graveO")
+	# handOcards = countCards("handO")
+	# playOcards = countCards("playO")
+	# print "Friendly Graveyard:"
+	# for key, value in graveFcards.iteritems():
+	# 	print "    " + key + " x" + str(value)
+	# print "Friendly Deck:"
+	# for key, value in deckFcards.iteritems():
+	# 	print "    " + key + " x" + str(value)
+	# print "Friendly Hand:"
+	# for key, value in handFcards.iteritems():
+	# 	print "    " + key + " x" + str(value)
+	# print "Friendly Play:"
+	# for key, value in playFcards.iteritems():
+	# 	print "    " + key + " x" + str(value)
+	# print "Opposing Play:"
+	# for key, value in playOcards.iteritems():
+	# 	print "    " + key + " x" + str(value)
+	# print "Opposing Hand:"
+	# for key, value in handOcards.iteritems():
+	# 	print "    " + key + " x" + str(value)
+	# print "Opposing Deck:"
+	# for key, value in deckOcards.iteritems():
+	# 	print "    " + key + " x" + str(value)
+	# print "Opposing Graveyard:"
+	# for key, value in graveOcards.iteritems():
+	# 	print "    " + key + " x" + str(value)
+	# print "========================================"
 	for i in range(0,len(playHistory)):
-		if(i < 20):
+		if(i < 70):
 			print playHistory[i]
 	
 def countCards(zone):
